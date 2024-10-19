@@ -1,0 +1,25 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: 200px;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.box {
+    padding-left: 30px;
+    border: 2px solid;
+    padding: 50px;
+    margin: 0 auto 75px;
+    width: 10%; /* Set a width to prevent stretching */
+}
