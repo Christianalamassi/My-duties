@@ -1,9 +1,8 @@
-import React from 'react';
-import { useState } from 'react';
+import React from 'react'
 
 
-const Main = () => {
-
+const HomeWork =() => {
+    
     return (
         <div>
             <form></form>
@@ -77,4 +76,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default HomeWork

@@ -1,9 +1,37 @@
 
 
 const Calendar = () => {
-    return (
-      <div>Calendar</div>
-    )
-  }
+  return (
+    <div>
+      <h1>Calendar</h1>
+      <div class="container">
+        <div class="calendar">
+          <header>
+            <pre class="left">◀</pre>
+            <div class="header-display">
+              <p class="display">""</p>
+            </div>
+            <pre class="right">▶</pre>
+          </header>
+          <div class="week">
+            <div>Su</div>
+            <div>Mo</div>
+            <div>Tu</div>
+            <div>We</div>
+            <div>Th</div>
+            <div>Fr</div>
+            <div>Sa</div>
+          </div>
+          <div class="days">
+            {/* days will be filled here*/}
+          </div>
+        </div>
+        <div class="display-selected">
+          <p class="selected"></p>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 export default Calendar
