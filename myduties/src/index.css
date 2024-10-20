@@ -2,7 +2,7 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 70%;
-    margin-left: 200px;
+    margin: 0 auto;
 }
 
 td,
@@ -17,9 +17,12 @@ tr:nth-child(even) {
 }
 
 .box {
-    padding-left: 30px;
+    font-size: 20px;
     border: 2px solid;
-    padding: 50px;
+    padding: 30px 50px;
     margin: 0 auto 75px;
     width: 10%; /* Set a width to prevent stretching */
+    display: flex;
+    justify-content: center; /* Aligns child horizontally */
+    align-items: center;    /* Aligns child vertically */
 }
