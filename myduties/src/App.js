@@ -1,5 +1,5 @@
 import './App.css';
-import Calendar from './Calendar.js';
+import Cal from './Cal.js';
 import Main from "./Main.js";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route exact path="/" element={<Main/>}/>
-          <Route exact path="/calendar" element={<Calendar/>}/>
+          <Route exact path="/calendar" element={<Cal/>}/>
         </Routes>
       </div >
     </Router>
