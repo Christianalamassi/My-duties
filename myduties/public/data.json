@@ -1,8 +1,8 @@
 {
-    "duty": [
+    "duties": [
         {
             "id": 1,
-            "homework": "",
+            "homework": "AAAAAA",
             "time": "",
             "done": ""
         }
