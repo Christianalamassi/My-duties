@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-// import TheData from './data.json';
+
 
 const Main = () => {
 
@@ -9,9 +9,20 @@ const Main = () => {
     const [done, setDone] = useState('');
     const [data, setData] = useState(null); // Initialize as `null` to indicate loading state
     const [error, setError] = useState(null); // Error state
+    const handleSubmit = () => {
+
+    }
+
 
     const handlesupmit = (e) => {
         e.preventDefault()
+        const duty = { homework, time, done }
+
+        fetch('/data.json', {
+            method: 'Post',
+            header: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(duty)
+        })
     }
 
     const getDate = () => {
@@ -54,66 +65,152 @@ const Main = () => {
                 <div className='box'>{getDate()}</div>
                 <table>
                     <tr>
-                        <td><input></input></td>
-                        <td> <label for="time1"></label>
-                            <input type="time" id="time1" name="time1"></input></td>
-                        <td>
-                            <label for="checkbox1"></label>
-                            <input type="checkbox" id="checkbox1" name="checkbox1" value="Bike"></input></td>
+                        <th>Home Work</th>
+                        <th>Time</th>
+                        <th>Done</th>
+                        <th>Edite</th>
                     </tr>
                     <tr>
-                        <td><input></input></td>
-                        <td> <label for="time1"></label>
-                            <input type="time" id="time1" name="time1"></input></td>
+                        <td>
+                            <input></input>
+                        </td>
+
+                        <td>
+                            <label for="time1"></label>
+                            <input type="time" id="time1" name="time1"></input>
+                        </td>
+
                         <td>
                             <label for="checkbox1"></label>
-                            <input type="checkbox" id="checkbox1" name="checkbox1" value="Bike"></input></td>
+                            <input type="checkbox" id="checkbox1" name="checkbox1" value="Bike"></input>
+                        </td>
+
+                        <td>
+                            <button>Save</button> <button>Delete</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input></input></td>
-                        <td> <label for="time1"></label>
-                            <input type="time" id="time1" name="time1"></input></td>
+                        <td>
+                            <input></input>
+                        </td>
+
+                        <td>
+                            <label for="time1"></label>
+                            <input type="time" id="time1" name="time1"></input>
+                        </td>
+
                         <td>
                             <label for="checkbox1"></label>
-                            <input type="checkbox" id="checkbox1" name="checkbox1" value="Bike"></input></td>
+                            <input type="checkbox" id="checkbox1" name="checkbox1" value="Bike"></input>
+                        </td>
+
+                        <td>
+                            <button>Save</button> <button>Delete</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input></input></td>
-                        <td> <label for="time1"></label>
-                            <input type="time" id="time1" name="time1"></input></td>
+                        <td>
+                            <input></input>
+                        </td>
+
+                        <td>
+                            <label for="time1"></label>
+                            <input type="time" id="time1" name="time1"></input>
+                        </td>
+
                         <td>
                             <label for="checkbox1"></label>
-                            <input type="checkbox" id="checkbox1" name="checkbox1" value="Bike"></input></td>
+                            <input type="checkbox" id="checkbox1" name="checkbox1" value="Bike"></input>
+                        </td>
+
+                        <td>
+                            <button>Save</button> <button>Delete</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input></input></td>
-                        <td> <label for="time1"></label>
-                            <input type="time" id="time1" name="time1"></input></td>
+                        <td>
+                            <input></input>
+                        </td>
+
+                        <td>
+                            <label for="time1"></label>
+                            <input type="time" id="time1" name="time1"></input>
+                        </td>
+
                         <td>
                             <label for="checkbox1"></label>
-                            <input type="checkbox" id="checkbox1" name="checkbox1" value="Bike"></input></td>
+                            <input type="checkbox" id="checkbox1" name="checkbox1" value="Bike"></input>
+                        </td>
+
+                        <td>
+                            <button>Save</button> <button>Delete</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input></input></td>
-                        <td> <label for="time1"></label>
-                            <input type="time" id="time1" name="time1"></input></td>
+                        <td>
+                            <input></input>
+                        </td>
+
+                        <td>
+                            <label for="time1"></label>
+                            <input type="time" id="time1" name="time1"></input>
+                        </td>
+
                         <td>
                             <label for="checkbox1"></label>
-                            <input type="checkbox" id="checkbox1" name="checkbox1" value="Bike"></input></td>
+                            <input type="checkbox" id="checkbox1" name="checkbox1" value="Bike"></input>
+                        </td>
+
+                        <td>
+                            <button>Save</button> <button>Delete</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input></input></td>
-                        <td> <label for="time1"></label>
-                            <input type="time" id="time1" name="time1"></input></td>
+                        <td>
+                            <input></input>
+                        </td>
+
+                        <td>
+                            <label for="time1"></label>
+                            <input type="time" id="time1" name="time1"></input>
+                        </td>
+
                         <td>
                             <label for="checkbox1"></label>
-                            <input type="checkbox" id="checkbox1" name="checkbox1" value="Bike"></input></td>
+                            <input type="checkbox" id="checkbox1" name="checkbox1" value="Bike"></input>
+                        </td>
+
+                        <td>
+                            <button>Save</button> <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input></input>
+                        </td>
+
+                        <td>
+                            <label for="time1"></label>
+                            <input type="time" id="time1" name="time1"></input>
+                        </td>
+
+                        <td>
+                            <label for="checkbox1"></label>
+                            <input type="checkbox" id="checkbox1" name="checkbox1" value="Bike"></input>
+                        </td>
+
+                        <td>
+                            <button>Save</button> <button>Delete</button>
+                        </td>
                     </tr>
                 </table>
-                <button type='submit'>Submit</button>
+
+                <button onClick={handleSubmit}>Submit</button>
+                <button><a href="/">Calendar</a></button>
             </form>
-        </div >
+        </div>
     )
 }
+
 
 export default Main
