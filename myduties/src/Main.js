@@ -1,6 +1,7 @@
 import React from 'react'
 import Table from './Table'
 import useFetch from './useFetch';
+import { Link } from 'react-router-dom';
 
 
 const Main = () => {
@@ -19,7 +20,7 @@ const Main = () => {
             {data && <Table  props={data}/>}
             {error && <div>{error}</div>}
             <button onClick={handleSubmit}>Submit</button>
-            <button><a href="/">Calendar</a></button>
+            <button><Link to="/calendar">Calendar</Link></button>
         </div>
     )
 }

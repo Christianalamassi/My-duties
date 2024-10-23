@@ -10,8 +10,8 @@ function App() {
       <div className="App">
         <Routes>
           <Route exact path="/" element={<Main/>} />
-          <Route exact path="/calendar" element={<Cal/>}/>
           <Route exact path="/admin" element={<Admin/>}/>
+          <Route exact path="/calendar" element={<Cal/>}/>
         </Routes>
       </div >
     </Router>

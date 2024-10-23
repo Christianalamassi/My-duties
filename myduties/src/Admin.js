@@ -1,6 +1,7 @@
 import React from 'react';
 import useFetch from './useFetch';
 import Table from './Table';
+import { Link } from 'react-router-dom';
 
 
 const Admin = () => {
@@ -17,7 +18,8 @@ const Admin = () => {
                 {data && <Table props={data} />}
                 {error && <div>{error}</div>}
                 <button onClick=''>Submit</button>
-                <button><a href="/">Calendar</a></button>
+                <button><a href="/calendar">Calendar</a></button>
+                <button><Link to="/">Home</Link></button>
             </form>
         </div>
     )

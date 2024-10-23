@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Calendar from 'react-calendar';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 function Cal() {
   const [date, setDate] = useState(new Date());
@@ -15,6 +16,7 @@ function Cal() {
         <span className='bold'>Selected Date:</span>{' '}
         {date.toDateString()}
       </p>
+      <button><Link to="/">Home</Link></button>
     </div>
   );
 }
