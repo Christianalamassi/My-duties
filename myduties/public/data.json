@@ -2,9 +2,9 @@
     "duties": [
         {
             "id": 1,
-            "homework": "AAAAAA",
-            "time": "",
-            "done": ""
+            "homework": "AAAAAAAA",
+            "time": "1010",
+            "done": "done"
         }
     ]
 }
