@@ -12,10 +12,17 @@ const Admin = () => {
     const [homework, setHomework] = useState('');
     const [time, setTime] = useState('');
     const [done, setDone] = useState('');
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("Form submitted");
+        const duty = {homework, time, done};
+        console.log(duty)
+    }
+
 
     return (
         <div>
-            <form onSubmit=''>
+            <form onSubmit={handleSubmit}>
                 <h1>The tasks of today</h1>
                 <div className='box'>{getDate()}</div>
 
@@ -45,26 +52,17 @@ const Admin = () => {
                     </tbody>
                 </table>
                 {error && <div>{error}</div>}
-                <button onClick=''>Add Task</button>
+                <button type='submit'>Add Task</button>
                 <button><a href="/calendar">Calendar</a></button>
                 <button><Link to="/">Home</Link></button>
             </form>
 
 
-            <div>
-                {data.length > 0 ? (
-                    data.map((duties) => (
-                        <p key={duties.id}>
-                            {duties.homework} - {duties.time} - {duties.done}
-                        </p>
-                    ))
-                ) : (
-                    <p>No tasks available.</p>
-                )}
+
                 <p>{homework}</p>
                 <p>{time}</p>
                 <p>{done}</p>
-            </div>
+
 
         </div>
     )
